@@ -121,7 +121,7 @@ class TktAuthentication(AbstractAuthentication):
         valid 2xx response
         """
         if _REISSUE_KEY in request:
-            if (response.started or
+            if (response.prepared or
                 not isinstance(response, web.Response) or
                 response.status < 200 or response.status > 299):
                 return
