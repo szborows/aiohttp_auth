@@ -10,7 +10,7 @@ tests_require = ['aiohttp_session']
 
 setup(
     name="aiohttp_auth",
-    version='0.1.1',
+    version='1.0.0',
     description='Authorization and authentication middleware plugin for aiohttp.',
     long_description=open('README.rst').read(),
     install_requires=requires,
